@@ -1,2 +1,12 @@
-	name: Tyler Jones, Aerospace Engineer
-	markdown: kramdown
+name: Tyler Jones, Aerospace Engineer
+markdown: kramdown
+repository: trj2088/trj2088.github.io
+url: https://trj2088.github.io
+
+baseurl: /trj2088.github.io
+
+# Jekyll settings
+layouts_dir: ./_layouts
+includes_dir: ./_includes
+exclude: [ 'README.md', 'CHANGELOG.md' ]
+permalink: /:title/
