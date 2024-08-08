@@ -2,7 +2,47 @@
 layout: default
 title: Tyler Jones, Aerospace Engineer
 ---
-<div class="blurb">
-        <h1> Tyler Jones, Aerospace Engineer </h1>
-	<p>Short intro here <a href="/about"> Read more about me.</a></p>
-</div><!-- /.blurb -->
+
+{% include lead.html %}
+
+{% include header.html %}
+
+<div id="projects" class="background-alt">
+    <h2 class="heading">Projects</h2>
+    <div class="container">
+        <div class="row">
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img src="images/LRE_thumb.jpg" alt="Bi-Propellant Liquid Rocket Engine" />
+                </div>
+                <!-- End .project-image -->
+                <div class="project-info">
+                    <h3>Bi-Propellant Liquid Rocket Engine</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                    </p>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
+
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img src="images/OAW300_thumb.png" alt="Conceptual Design of a Supersonic Oblique All-Wing Transport" />
+                </div>
+                <!-- End .project-image -->
+                <div class="project-info">
+                    <h3>Conceptual Design of a Supersonic Oblique All-Wing Transport</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                    </p>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
+        </div>
+    </div>
+</div>
+<!-- End #projects -->
