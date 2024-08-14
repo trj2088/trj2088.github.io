@@ -1,0 +1,47 @@
+---
+layout: default
+title: Tyler Jones Projects
+---
+		<header>
+			<div class="header-content">
+				<div class="header-content-inner">
+					<h1>Tyler Jones <br> Aerospace Engineer</h1>
+					<hr>
+					<p> Here's a quick blurb about me and this collection. </p>
+					<a href="/about.html" class="btn btn-primary btn-xl page-scroll"> Download Resume </a>
+				</div>
+			</div>
+		</header>
+		<section class="no-padding" id="portfolio">
+			<div class="container-fluid">
+				<div class="row no-gutter">
+          {% for item in site.portfolio %}
+					<div class="col-lg-4 col-sm-6">
+						<a href="{{ item.link }}" class="portfolio-box">
+							<img src="{{ item.image_path }}" class="img-responsive" alt="{{ item.project_name }}">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-caption-content">
+									<div class="project-category text-faded">
+                    {{ item.category }}
+									</div>
+									<div class="project-name">
+										{{ item.project_name }}
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+          {% endfor %}
+          
+				</div>
+			</div>
+		</section>
+<!--		<aside class="bg-dark">
+			<div class="container text-center">
+				<div class="call-to-action">
+					<h2>Download a copy of my resume:</h2>
+					<a href="/services.html" class="btn btn-default btn-xl wow tada">Download Now!</a>
+				</div>
+			</div>
+		</aside>
+		-->
