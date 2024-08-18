@@ -4,7 +4,7 @@ image_path: /img/code/1.jpg
 category: Data Aquisition
 project_name: Basic Analog Read
 project_description: This is a simple script that reads an analog value from an input and prints it to the serial monitor. This is a great starting point for learning how to read analog values from a sensor.
-link: https://google.com
+link: analogread.html
 ---
 
 <pre><code>

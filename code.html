@@ -1,129 +1,88 @@
 ---
-layout: page
+layout: codelayout
 title: Code etc.
 ---
 <section class="bg-primary" id="about">
   <div class="container">
     <div class="row">
 
-      
-    </div>
-  </div>
-</section>
-
-<section class="padded" id="code">
-
-  <div class="col-lg-8 col-lg-offset-2 text-center">
-      <h2 class="section-heading">Data Aquisition</h2>
-      <hr class="light">
-      <p class="text-primary"> The following scripts are helpful for getting started with basic data aquisition performed with Arduino or STM32 microcontrollers or SBCs like the raspberry Pi or BeagleBone boards.</p>
-    
-  </div>
-
-
-  <div class="card-category-1">
-    <div class="basic-card basic-card-aqua">
-      <div class="card-content">
-          <span class="card-title">Card Title</span>
-          <p class="card-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-          </p>
-      </div>
-
-      <div class="card-link">
-          <a href="#" title="Read Full"><span>Read Full</span></a>
-      </div>
-    </div>
-
-    <div class="basic-card basic-card-aqua">
-      <div class="card-content">
-          <span class="card-title">Card Title</span>
-          <p class="card-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-          </p>
-      </div>
-
-      <div class="card-link">
-          <a href="#" title="Read Full"><span>Read Full</span></a>
-      </div>
-      </div>
-
-    <div class="basic-card basic-card-aqua">
-      <div class="card-content">
-          <span class="card-title">Card Title</span>
-          <p class="card-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-          </p>
-      </div>
-
-      <div class="card-link">
-          <a href="#" title="Read Full"><span>Read Full</span></a>
-      </div>
-      </div>
-
-    <div class="basic-card basic-card-aqua">
-      <div class="card-content">
-          <span class="card-title">Card Title</span>
-          <p class="card-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-          </p>
-      </div>
-
-      <div class="card-link">
-          <a href="#" title="Read Full"><span>Read Full</span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--
-<section class="no-padding" id="code">
-  <div class="container">
-    <div class="col-lg-8 col-lg-offset-2 text-left">
-      <h2 class="section-heading">Basic Analog Read</h2>
-      <p class="text-primary">This is a simple script that reads an analog value from an input and prints it to the serial monitor. This is a great starting point for learning how to read analog values from a sensor.</p>
-      <pre>
-        <code>
-          int sensorPin = A0;    // select the input pin for the potentiometer
-          int sensorValue = 0;  // variable to store the value coming from the sensor
-
-          void setup() {
-            Serial.begin(9600);
-          }
-
-          void loop() {
-            // read the value from the sensor:
-            sensorValue = analogRead(sensorPin);    
-            Serial.println(sensorValue);   
-            delay(100);                     
-          }
-        </code></pre>
     </div>
   </div>
 </section>
 
 
-<section class="padded" id="code">
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      {% for item in site.code %}
-      <div class="col-lg-4 col-sm-6">
-        <a href="{{ item.link }}" class="code-box">
-          <img src="{{ item.image_path }}" class="img-responsive" alt="{{ item.project_name }}">
-          <div class="code-box-caption">
-            <div class="code-box-caption-content">
-              <div class="project-category text-faded">
-                {{ item.category }}
-              </div>
-              <div class="project-name">
-                {{ item.project_name }}
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      {% endfor %}
 
+<section class="padded">
 
+  <div class="codeblock">
+    <h2 class="section-heading2">Basic Analog Read</h2>
+    <hr class="light">
+    <p class="body"> This is a simple script that reads an analog value from an input and prints it to the serial monitor. This is a great starting point for learning how to read analog values from a sensor. </p>
+  <pre><code>
+  int sensorPin = A0;    // select the input pin for the potentiometer
+  int sensorValue = 0;  // variable to store the value coming from the sensor
 
--->
+  void setup() {
+  Serial.begin(9600);
+  }
+
+  void loop() {
+  // read the value from the sensor:
+  sensorValue = analogRead(sensorPin);    
+  Serial.println(sensorValue);   
+  delay(100);                     
+  }
+  </code></pre>
+<br/>
+<br/>
+
+  <h2 class="section-heading2">Basic Smoothing</h2>
+  <hr class="light">
+  <p class="body"> This is a simple smoothing script. It calculates a running average based on the last 10 samples received and prints output to the serial monitor.</p>
+
+<pre><code>
+  const int numReadings = 10;
+
+  int readings[numReadings];      // the readings from the analog input
+  int readIndex = 0;              // the index of the current reading
+  int total = 0;                  // the running total
+  int average = 0;                // the average
+  
+  int inputPin = A0;
+  
+  
+  
+  void setup() {
+    // initialize serial communication with computer:
+    Serial.begin(9600);
+    // initialize all the readings to 0:
+    for (int thisReading = 0; thisReading < numReadings; thisReading++) {
+      readings[thisReading] = 0;
+    }
+  }
+  
+  void loop() {
+    // subtract the last reading:
+    total = total - readings[readIndex];
+    // read from the sensor:
+    readings[readIndex] = analogRead(inputPin);
+    // add the reading to the total:
+    total = total + readings[readIndex];
+    // advance to the next position in the array:
+    readIndex = readIndex + 1;
+  
+    // if we're at the end of the array...
+    if (readIndex >= numReadings) {
+      // ...wrap around to the beginning:
+      readIndex = 0;
+    }
+  
+    // calculate the average:
+    average = total / numReadings;
+    // send it to the computer as ASCII digits
+    Serial.println(average);
+    delay(1);        // delay in between reads for stability
+  }
+</code></pre>
+</div>
+</section>
