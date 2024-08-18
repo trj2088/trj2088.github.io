@@ -1,3 +1,5 @@
 collections:
   portfolio:
+    output: true
+    permalink: /:path/    
   code:
