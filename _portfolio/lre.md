@@ -9,13 +9,13 @@ link: /portfolio/lre.html
 
 
 ![Test Stand Render](/img/portfolio/standrender_small.png){:.centered}
-*Render of the test stand structure*
+<p style="text-align:center">Render of the test stand structure</p>
 
 ![Feed System Piping and Instrumentation Diagram](/img/portfolio/PID_1000.png){:.centered}
-*Feed System Piping and Instrumentation Diagram*
+<p style="text-align:center">Feed System Piping and Instrumentation Diagram</p>
 
 ![Engine data](/img/portfolio/Data_quick_guide.png){:.centered}
-*Initial design parameters*
+<p style="text-align:center">Initial design parameters</p>
 
 <!--
 <div style="width:50%; margin: auto;">
