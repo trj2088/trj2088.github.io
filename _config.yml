@@ -3,3 +3,5 @@ collections:
     output: true
     permalink: /:collection/:name:output_ext
   code:
+    output: true
+    permalink: /:collection/:name:output_ext
