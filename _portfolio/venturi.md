@@ -1,6 +1,13 @@
 ---
-image_path: /img/portfolio/venturi.jpg
+layout: page
+title: Cavitating Venturi
+image_path: /img/portfolio/venturi_thumb.png
 category: Propulsion
 project_name: Cavitating Venturi 
-link: https://google.com
+link: /portfolio/venturi.html
 ---
+
+![Venturi schematic](/img/portfolio/venturi_draw_700.png){:.centered}
+<p style="text-align:center">Venturi cross section drawing</p>
+<br/>
+
