@@ -5,3 +5,6 @@ collections:
   code:
     output: true
     permalink: /:collection/:name:output_ext
+  concepts:
+    output: true
+    permalink: /:collection/:name:output_ext

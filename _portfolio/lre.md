@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Bi-propellant Liquid Rocket Engine
-image_path: /img/portfolio/lre.jpg
+image_path: /img/portfolio/lre_thumb.png
 category: Propulsion
-project_name: LRE
+project_name: Bi-propellant Liquid Rocket Engine
 link: /portfolio/lre.html
 ---
 

@@ -2,7 +2,7 @@
 layout: page
 title: Conceptual Design of an Oblique All-Wing Supersonic Transport
 image_path: /img/portfolio/oaw_thumb.png
-category: Aircraft Design
+category: Conceptual Design
 project_name: OAW
 link: /portfolio/oaw.html
 ---
