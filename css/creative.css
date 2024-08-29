@@ -104,6 +104,17 @@ aside {
     padding-right: 250px;
 }
 
+.in-progress-banner {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 2px solid #88898b;
+    padding: 15px;
+    border-radius: 5px;
+}
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);

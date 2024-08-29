@@ -7,6 +7,9 @@ project_name: Bi-propellant Liquid Rocket Engine
 link: /portfolio/lre.html
 ---
 
+{% include in_process.html %}
+<br/>
+
 
 ![Test Stand Render](/img/portfolio/standrender_small.png){:.centered}
 <p style="text-align:center">Render of the test stand structure</p>

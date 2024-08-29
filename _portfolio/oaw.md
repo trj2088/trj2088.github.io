@@ -6,7 +6,8 @@ category: Conceptual Design
 project_name: OAW
 link: /portfolio/oaw.html
 ---
-
+{% include in_process.html %}
+<br/>
 
 ![OAW concept vehicle](/img/portfolio/OAW_thumb.png){:.centered}
 <p style="text-align:center">Oblique All-Wing concept model</p>
