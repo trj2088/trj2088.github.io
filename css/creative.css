@@ -63,6 +63,8 @@ img.centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
 
 p {
@@ -119,7 +121,7 @@ aside {
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: #222;
+    background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -129,12 +131,12 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #212a31;
+    color: #fff;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #212a31;
+    color: #fff;
 }
 
 .navbar-default .nav > li>a,
