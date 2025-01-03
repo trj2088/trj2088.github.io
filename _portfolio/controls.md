@@ -8,6 +8,7 @@ link: /portfolio/controls.html
 ---
 
 {% include in_process.html %}
+ 
 <br/>
 ![Control system hardware front](/img/portfolio/con_front_label600.png){:.centered}
 <p style="text-align:center">Controls Hardware - Front</p>
