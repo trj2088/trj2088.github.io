@@ -20,3 +20,4 @@ link: /portfolio/controls.html
 ![Control system hardware inside](/img/portfolio/con_top600.png){:.centered}
 <p style="text-align:center">Controls Hardware</p>
 <br/>
+ 
