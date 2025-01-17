@@ -26,6 +26,16 @@ a {
     transition: all .35s;
 }
 
+main {
+    display: block;
+    position: relative;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 3000px;
+}
+
 a:hover,
 a:focus {
     color: #212A31;
