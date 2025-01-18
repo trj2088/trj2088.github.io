@@ -27,12 +27,10 @@ a {
 }
 
 main {
-    display: block;
-    position: relative;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin: 0 auto;
-    padding: 1em;
+    margin:  auto;
+    margin-left: 2em;
+    margin-right: auto;
+    padding: 4em;
     max-width: 3000px;
 }
 
@@ -46,6 +44,7 @@ h2,
 h3,
 h4,
 h5 {
+    margin: 0.5em 1em 0.5em 1em;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
@@ -73,7 +72,10 @@ img.centered {
   }
 
 p {
+    margin-top: 0;
     margin-bottom: 10px;
+    margin-left: 2em;
+    margin-right: 2em;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -92,7 +94,7 @@ p {
 }
 
 section {
-    padding: 50px 0;
+    padding: 50px;
 }
 
 aside {
@@ -114,6 +116,7 @@ aside {
 .in-progress-banner {
     display: block;
     margin: 0 auto;
+    margin-bottom: 1em;
     justify-content: center;
     text-align: center;
     align-items: center;
