@@ -16,6 +16,7 @@ This project explores the design and feasibility of an Oblique All-Wing (OAW) su
 + Challenges Addressed: Addressing issues like passenger cabin integration, runway span constraints, and propulsion placement while balancing performance and manufacturability.
 + Applications: The concept demonstrates potential for high-capacity commercial use, military, and surveillance roles, offering superior lift-to-drag ratios compared to traditional designs.
 <br/> <br/>
+
 <h2 style="text-align:center">Configuration Layout</h2>
 ![OAW concept vehicle](/img/portfolio/cl_overview_sm.png){:.centered}
 <p style="text-align:center">Configuration Layout process overview</p>
@@ -24,6 +25,7 @@ This project explores the design and feasibility of an Oblique All-Wing (OAW) su
 ![OAW concept vehicle](/img/portfolio/oaw_thumb.png){:.centered}
 <p style="text-align:center">Oblique All-Wing concept model</p>
 <br/>
+
 This work highlights both the potential and the challenges of the OAW configuration, paving the way for future advancements in sustainable, high-speed air travel.
 <br/>
 <br/>
