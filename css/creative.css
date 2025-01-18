@@ -64,11 +64,11 @@ img {
   }
 
 img.centered {
-    display: block;
+    display: flow;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
 p {
@@ -76,7 +76,7 @@ p {
     margin-bottom: 10px;
     margin-left: 2em;
     margin-right: 2em;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
@@ -114,7 +114,7 @@ aside {
 }
 
 .in-progress-banner {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     margin-bottom: 1em;
     justify-content: center;
